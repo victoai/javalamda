@@ -1,0 +1,38 @@
+import java.util.*;
+
+class HashMapEx2 {
+	public static void main(String[] args) {
+		HashMap map = new HashMap();
+		map.put("源?먮컮", new Integer(90));
+		map.put("源?먮컮", new Integer(100));
+		map.put("?댁옄諛?, new Integer(100));
+		map.put("媛뺤옄諛?, new Integer(80));
+		map.put("?덉옄諛?, new Integer(90));
+
+		Set set = map.entrySet();
+		Iterator it = set.iterator();
+
+		while(it.hasNext()) {
+			Map.Entry e = (Map.Entry)it.next();
+			System.out.println("?대쫫 : "+ e.getKey() + ", ?먯닔 : " + e.getValue());
+		}
+
+		set = map.keySet();
+		System.out.println("李멸???紐낅떒 : " + set);
+
+		Collection values = map.values();
+		it = values.iterator();
+
+		int total = 0;
+
+		while(it.hasNext()) {
+			Integer i = (Integer)it.next();
+			total += i.intValue();
+		}
+
+		System.out.println("珥앹젏 : " + total);
+		System.out.println("?됯퇏 : " + (float)total/set.size());
+		System.out.println("理쒓퀬?먯닔 : " + Collections.max(values));
+		System.out.println("理쒖??먯닔 : " + Collections.min(values));
+	}
+}

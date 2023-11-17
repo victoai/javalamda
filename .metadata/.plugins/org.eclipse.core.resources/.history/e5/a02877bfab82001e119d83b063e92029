@@ -1,0 +1,46 @@
+package ch14;
+
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.Arrays;
+
+public class CollectEx1 {
+
+    public static void main(String[] args) {
+        // 학생 객체를 담고 있는 리스트 생성
+        List<Student> students = Arrays.asList(
+                new Student("Alice", 23),
+                new Student("Bob", 27),
+                new Student("Charlie", 22),
+                new Student("David", 30)
+        );
+
+        // 나이가 25 이상인 학생들을 이름을 키로 하는 맵으로 수집하는 람다식
+        Map<String, Integer> olderStudentsMap = students.stream()
+                .filter(student -> student.getAge() >= 25)
+                .collect(Collectors.toMap(Student::getName, Student::getAge));
+
+        // 결과 출력
+        System.out.println(olderStudentsMap);
+    }
+
+    // 학생 클래스 정의
+    static class Student {
+        private String name;
+        private int age;
+
+        public Student(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+    }
+}
