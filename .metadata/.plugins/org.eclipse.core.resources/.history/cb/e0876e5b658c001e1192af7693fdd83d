@@ -1,0 +1,8 @@
+package ch12.enum_;
+
+ enum  fruit {
+
+ }
+ class EnumEx0 {
+ }
+  

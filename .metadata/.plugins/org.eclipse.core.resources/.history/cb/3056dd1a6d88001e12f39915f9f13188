@@ -1,0 +1,8 @@
+package annotation;
+
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface TestAndPrint {
+    String before() default "";
+    String after() default "";
+}

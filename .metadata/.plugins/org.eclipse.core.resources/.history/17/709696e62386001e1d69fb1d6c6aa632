@@ -1,0 +1,36 @@
+package ch12;
+
+//Enum 정의
+enum Transportation0 {
+	 BUS(100),
+	 TRAIN(150),
+	 SHIP(100),
+	 AIRPLANE(300);
+	
+	 final int BASIC_FARE; 
+	
+	 // Enum 생성자
+	 Transportation0(int basicFare) {
+	     BASIC_FARE = basicFare;
+	 }
+	
+	 // Enum 메서드
+	 int fare(int distance) {
+	     return distance * BASIC_FARE;
+	 }
+	 
+	 public int getBasicFare() { return BASIC_FARE; }
+}
+
+//메인 클래스
+public class EnumEx2 {
+ public static void main(String[] args) {
+     // Enum 사용
+     System.out.println("bus fare=" + Transportation0.BUS.fare(100));
+     System.out.println("train fare=" + Transportation0.TRAIN.fare(100));
+     System.out.println("ship fare=" + Transportation0.SHIP.fare(100));
+     System.out.println("airplane fare=" + Transportation0.AIRPLANE.fare(100));
+     
+     System.out.println("airplane basic fare=" + Transportation0.AIRPLANE.getBasicFare());
+ }
+}

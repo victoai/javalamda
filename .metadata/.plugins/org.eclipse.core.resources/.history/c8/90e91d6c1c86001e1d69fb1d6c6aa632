@@ -1,0 +1,26 @@
+package ch12;
+
+public class Enum사용안함2 {
+    public static void main(String[] args) {
+        // 문자열로 요일 표현
+        String today = "Wednesday";
+
+        // 문자열 비교를 통한 동작
+        if ("Monday".equals(today)) {
+            System.out.println("It's Monday. Let's start the week!");
+        } else if ("Wednesday".equals(today)) {
+            System.out.println("It's Wednesday. Halfway through the week!");
+        } else if ("Friday".equals(today)) {
+            System.out.println("It's Friday. Weekend is coming!");
+        } else {
+            System.out.println("It's a regular day.");
+        }
+
+        // 문자열 배열을 사용하여 요일 순회
+        String[] daysOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+        System.out.println("Days of the week:");
+        for (String day : daysOfWeek) {
+            System.out.println(day);
+        }
+    }
+}

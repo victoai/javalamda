@@ -8,6 +8,7 @@ class ArraysEx {
 
 		System.out.println("arr="+Arrays.toString(arr));
 		System.out.println("arr2D="+Arrays.deepToString(arr2D));
+		  
 
 		int[] arr2 = Arrays.copyOf(arr, arr.length);
 		int[] arr3 = Arrays.copyOf(arr, 3);          
@@ -34,8 +35,13 @@ class ArraysEx {
 			System.out.println(new String(graph)+i);
 		}
 
+		
 		String[][] str2D  = new String[][]{{"aaa","bbb"},{"AAA","BBB"}};
 		String[][] str2D2 = new String[][]{{"aaa","bbb"},{"AAA","BBB"}};
+
+	//  String[] test  = {"aaa","bbb"};
+	//	String[][] str2D  =  {{"aaa","bbb"},{"AAA","BBB"}};
+	//	String[][] str2D2 =  {{"aaa","bbb"},{"AAA","BBB"}};
 
 		System.out.println(Arrays.equals(str2D, str2D2));      // false
 		System.out.println(Arrays.deepEquals(str2D, str2D2));  // true

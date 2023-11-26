@@ -1,0 +1,10 @@
+package annotation.practice;
+
+public class MyEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

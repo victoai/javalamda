@@ -1,0 +1,7 @@
+package annotation;
+
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface ClassDesc {
+    String value();
+}

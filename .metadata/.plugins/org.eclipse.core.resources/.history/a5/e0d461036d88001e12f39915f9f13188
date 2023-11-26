@@ -1,0 +1,6 @@
+package annotation;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface WeekDaysAvail {
+    WeekDay[] value();
+}
