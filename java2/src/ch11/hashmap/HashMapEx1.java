@@ -6,8 +6,10 @@ class HashMapEx1 {
 		
 		Scanner s = new Scanner(System.in);	 
 
-		//키:값 형태로 데이터를 저장한다
+		//키와값의 쌍의 형태로 데이터를 저장한다
 		//검색이 빠르다
+		//해싱기법으로 데이터 저장
+		
 		
 		HashMap map = new HashMap();
 		map.put("myId", "1234");

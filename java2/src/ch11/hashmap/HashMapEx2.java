@@ -4,11 +4,11 @@ import java.util.*;
 class HashMapEx2 {
 	public static void main(String[] args) {
 		HashMap map = new HashMap();
-		map.put("김자바", new Integer(90));
-		map.put("김자바", new Integer(100));
-		map.put("이자바", new Integer(100));
-		map.put("강자바", new Integer(80));
-		map.put("안자바", new Integer(90));
+		map.put("김자바",  90);
+		map.put("김자바", 100);
+		map.put("이자바", 100);
+		map.put("강자바", 80);
+		map.put("안자바", 90);
 
 		 
 		//map의 모든 키-값 쌍을 포함하는 Set을 얻기 위해 entrySet() 메소드를 사용
@@ -20,15 +20,17 @@ class HashMapEx2 {
 			System.out.println("이름 : "+ e.getKey() + ", 점수 : " + e.getValue());
 		}
 
-		
-		set = map.keySet();
-		System.out.println("참가자 명단 : " + set);
+		//키값만 얻어오기
+		Set keySet = map.keySet();
+		System.out.println("참가자 명단 : " + keySet);
 
+		//값만 얻어오기
 		Collection values = map.values();
-		it = values.iterator();
+		
+		//Collection의 요소를 반복하는 방법
+		it = values.iterator();   // iterator는 반복자의 의미 가짐
 
 		int total = 0;
-
 		while(it.hasNext()) {
 			Integer i = (Integer)it.next();
 			total += i.intValue();

@@ -12,7 +12,7 @@ public class Enum사용안함 {
 
     public static void main(String[] args) {
         // 상수 사용
-        int today = WEDNESDAY;
+        int today = WEDNESDAY; 
 
         // 값 출력
         System.out.println("오늘은" + getDayName(today));
@@ -39,19 +39,19 @@ public class Enum사용안함 {
     public static String getDayName(int day) {
         switch (day) {
             case SUNDAY:
-                return "일";
+                return "SUNDAY";
             case MONDAY:
-                return "월";
+                return "MONDAY";
             case TUESDAY:
-                return "화";
+                return "TUESDAY";
             case WEDNESDAY:
-                return "수";
+                return "WEDNESDAY";
             case THURSDAY:
-                return "목";
+                return "THURSDAY";
             case FRIDAY:
-                return "금";
+                return "FRIDAY";
             case SATURDAY:
-                return "토";
+                return "SATURDAY";
             default:
                 return "잘못된 요일";
         }
