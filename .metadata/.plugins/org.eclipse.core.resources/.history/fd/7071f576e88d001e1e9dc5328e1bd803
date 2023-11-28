@@ -21,19 +21,13 @@ class StreamEx0 {
 	     
 	    
 	     //객체의  기본정렬
-	     // a.sorted().forEach( student ->   System.out.println( student));		     
+	     // a.sorted().forEach( student ->   System.out.println( student));	 
+	     
 	     
 	     //반별 오름차순
 	     // a.sorted( ( o1, o2) ->  o1.getBan() - o2.getBan()).forEach( student -> System.out.println( student));
 	    
-	     /*
-	      a.sorted(  new Comparator<>() {
-
-			@Override
-			public int compare(Student o1, Student o2) {			 
-				return o1.getBan()- o2.getBan();
-			}});	 
-	      */
+	 
 	     
 	     //감각적으로 사용하기
 	     //Comparator.comparing( Function f)

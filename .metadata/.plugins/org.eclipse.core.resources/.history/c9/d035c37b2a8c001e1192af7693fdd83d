@@ -1,5 +1,0 @@
-package annotation;
-
-public enum LimitType {
-    MAX, MIN
-}

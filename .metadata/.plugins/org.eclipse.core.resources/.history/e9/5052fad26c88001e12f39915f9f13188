@@ -1,7 +1,0 @@
-package annotation;
-
-@Target(ElementType.FIELD)
-@Retention(RetentionPolicy.RUNTIME)
-public @interface NumLimits {
-    NumLimit[] value();
-}

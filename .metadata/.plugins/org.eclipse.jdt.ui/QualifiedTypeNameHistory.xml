@@ -11,4 +11,5 @@
     <fullyQualifiedTypeName name="annotation.basic.RetRuntime"/>
     <fullyQualifiedTypeName name="annotation.practice.MaxLen"/>
     <fullyQualifiedTypeName name="ch14.stream.Student"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
